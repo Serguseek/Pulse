@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE — Матчмейкинг для CS:GO Legacy | 128 Tick</title>
+  <!-- Иконка вкладки браузера -->
+  <link rel="icon" type="image/png" href="Logo NonFon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Экран приветствия (Splash Screen) -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-glow"></div>
+    <div class="splash-content">
+      <div class="splash-logo-wrap">
+        <!-- Увеличенная иконка на приветствии (Logo.jpeg) -->
+        <img src="Logo.jpeg" alt="PULSE Logo" class="splash-logo">
+      </div>
+      <h2 class="splash-title">Добро пожаловать в <span class="text-gradient">PULSE</span></h2>
+      <p class="splash-subtitle">Возрождение соревновательного CS:GO Legacy</p>
+      <div class="splash-loader">
+        <div class="splash-loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Космический анимированный фон -->
+  <div class="cosmic-bg">
+    <div class="stars"></div>
+    <div class="stars-layer-2"></div>
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+  </div>
+
+  <!-- Навигация -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <!-- Увеличенная иконка в шапке (Logo NonFon.png) -->
+        <img src="Logo NonFon.png" alt="PULSE" class="logo-img">
+        <span>PULSE</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">О платформе</a>
+        <a href="#grind">Режим The Grind</a>
+        <a href="#rating">Рейтинг и уровни</a>
+        <a href="#showcase">Интерфейс</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary btn-sm">Скачать клиент</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главный экран (Hero) -->
+  <section class="hero" id="download">
+    <div class="container hero-grid">
+      <div class="hero-content hero-animate">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Уже в разработке</span>
+        </div>
+        <h1>Возрождение <span class="text-gradient">CS:GO Legacy</span> в чистом 128 Tick</h1>
+        <p class="hero-subtitle">
+          Никакого CS2. Только честный матчмейкинг, понятная система <strong>Pulse Rating</strong>, ручной античит-контроль и та самая ностальгическая механика.
+        </p>
+
+        <!-- Блок скачивания / Лаунчер -->
+        <div class="download-box glass-card">
+          <div class="download-actions">
+            <button class="btn btn-primary btn-lg btn-shine" id="downloadBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Скачать PULSE Launcher
+            </button>
+            <a href="https://t.me/" target="_blank" class="btn btn-secondary btn-lg">
+              Telegram-канал
+            </a>
+          </div>
+          <div class="download-meta">
+            <span>Статус: <strong>Ранний доступ</strong></span>
+            <span>•</span>
+            <span>Windows 10/11 (x64)</span>
+            <span>•</span>
+            <span>Вход через Steam</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слот для главной картинки (Figma / Скриншот клиента) -->
+      <div class="hero-visual hero-animate delay-2">
+        <div class="mockup-frame floating" id="tiltCard">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="mockup-title">PULSE — Главный экран</span>
+          </div>
+          <!-- ЗАМЕНИТЕ ЭТОТ БЛОК НА ВАШ ТЕГ <img src="hero-preview.png" alt="Интерфейс Pulse"> -->
+          <div class="image-placeholder hero-placeholder">
+            <div class="placeholder-icon">🖼️</div>
+            <p>Место для главного скриншота из Figma</p>
+            <span>Рекомендуемый размер: 1200 × 750 px</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ключевые преимущества -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Почему PULSE?</span>
+        <h2>Создано игроками для фанатов <span class="text-gradient">Legacy</span></h2>
+      </div>
+
+      <div class="features-grid">
+    <div class="feature-card glass-card reveal">
+     <img src="InetNonfon.png" alt="128 Tick" class="feature-img">
+     <h3>Выделенные 128 Tick</h3>
+     <p>Стабильные соревновательные серверы CS:GO Legacy с идеальной регистрацией попаданий и комфортным пингом.</p>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="feature-card glass-card reveal delay-1">
+          <img src="NonCheats-Photoroom.png" alt="Чистые матчи" class="feature-img">
+          <h3>Чистые матчи без читеров</h3>
+          <p>Автоматическая запись демо каждого матча и внимательная ручная проверка всех жалоб от игроков.</p>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="feature-card glass-card reveal delay-2">
+          <img src="InetNonfon.png" alt="Низкий порог входа" class="feature-img">
+          <h3>Низкий порог входа</h3>
+          <p>Авторизация в один клик через Steam. Никаких сложных настроек — нажал «Быстрый старт», забанил карты и зашёл в игру.</p>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="feature-card glass-card reveal delay-3">
+          <img src="InetNonfon.png" alt="Прозрачный рейтинг" class="feature-img">
+          <h3>Прозрачный рейтинг</h3>
+          <p>Фиксированные +20 за победу и −20 за поражение. Никаких скрытых формул — ваш ранг зависит только от побед.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Механика режима The Grind -->
+  <section class="section" id="grind">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Основной режим</span>
+        <h2>Как устроен <span class="text-gradient">The Grind</span></h2>
+        <p class="section-desc">Классический соревновательный 5×5 с честной системой вето карт перед началом матча.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card glass-card reveal">
+          <div class="step-number">01</div>
+          <h3>Быстрый старт</h3>
+          <p>Нажмите кнопку поиска и попадите в общую очередь игроков CS:GO Legacy.</p>
+        </div>
+        <div class="step-card glass-card reveal delay-1">
+          <div class="step-number">02</div>
+          <h3>Сбор 10 игроков</h3>
+          <p>Система формирует две сбалансированные команды и назначает капитанов.</p>
+        </div>
+        <div class="step-card glass-card reveal delay-2">
+          <div class="step-number">03</div>
+          <h3>Чередование банов</h3>
+          <p>Капитаны по очереди убирают карты (A → B → A → B), пока не останется последняя.</p>
+        </div>
+        <div class="step-card glass-card reveal delay-3">
+          <div class="step-number">04</div>
+          <h3>Матч и начисление очков</h3>
+          <p>Сервер автоматически запускает игру на выбранной карте, а после финала обновляет ваш Pulse Rating (±20).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Система рейтинга и уровни -->
+  <section class="section" id="rating">
+    <div class="container rating-layout">
+      <div class="rating-info reveal">
+        <span class="section-tag">Система прогрессии</span>
+        <h2>Уровни 1–10 и <span class="text-gradient">Pulse Rating</span></h2>
+        <p>
+          Мы отказались от запутанного ELO. Все начинают с <strong>0 рейтинга (1 уровень)</strong>. За каждую победу вы получаете <strong>+20 очков</strong>, за поражение теряете <strong>−20</strong> (ничья — 0).
+        </p>
+        <p>
+          Сбалансированная шкала порогов даёт быстрое ощущение прогресса: путь с 1 до 10 уровня при 50% винрейте занимает около 70–80 матчей.
+        </p>
+
+        <div class="map-ranks-box glass-card">
+          <h4>Ранги карт (в разработке)</h4>
+          <p class="small-muted">В будущих обновлениях появится отдельный прогресс и звание для каждой карты:</p>
+          <div class="ranks-pills">
+            <span class="rank-pill bronze">Бронза</span>
+            <span class="rank-pill silver">Сильвер</span>
+            <span class="rank-pill gold">Золото</span>
+            <span class="rank-pill platinum">Платина</span>
+            <span class="rank-pill crown">Корона</span>
+            <span class="rank-pill crown-star">Корона ★</span>
+            <span class="rank-pill elite">Элита</span>
+            <span class="rank-pill legend">Легенда</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Таблица уровней -->
+      <div class="levels-table-wrapper glass-card reveal delay-1">
+        <table class="levels-table">
+          <thead>
+            <tr>
+              <th>Уровень</th>
+              <th>Pulse Rating</th>
+              <th>Побед от пред. уровня</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="lvl-badge lvl-1">LVL 1</span></td>
+              <td>0</td>
+              <td>Стартовый</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-2">LVL 2</span></td>
+              <td>60</td>
+              <td>~3 победы</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-3">LVL 3</span></td>
+              <td>140</td>
+              <td>~4 победы</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-4">LVL 4</span></td>
+              <td>240</td>
+              <td>~5 побед</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-5">LVL 5</span></td>
+              <td>360</td>
+              <td>~6 побед</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-6">LVL 6</span></td>
+              <td>500</td>
+              <td>~7 побед</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-7">LVL 7</span></td>
+              <td>660</td>
+              <td>~8 побед</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-8">LVL 8</span></td>
+              <td>840</td>
+              <td>~9 побед</td>
+            </tr>
+            <tr>
+              <td><span class="lvl-badge lvl-9">LVL 9</span></td>
+              <td>1040</td>
+              <td>~10 побед</td>
+            </tr>
+            <tr class="row-max">
+              <td><span class="lvl-badge lvl-10">LVL 10</span></td>
+              <td>1260+</td>
+              <td>~11 побед (Максимум)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Галерея интерфейса (Место под ваши картинки) -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Дизайн и прототипы</span>
+        <h2>Взгляните на <span class="text-gradient">интерфейс PULSE</span></h2>
+        <p class="section-desc">Минималистичный тёмный интерфейс, созданный с акцентом на скорость и удобство.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item glass-card reveal">
+          <!-- ЗАМЕНИТЕ НА <img src="screen-map-select.png" alt="Выбор карты"> -->
+          <div class="image-placeholder gallery-placeholder">
+            <div class="placeholder-icon">🗺️</div>
+            <p>Экран выбора карт и рангов</p>
+            <span>800 × 500 px</span>
+          </div>
+          <div class="gallery-caption">
+            <h4>Выбор пула карт</h4>
+            <p>Наглядное отображение доступных карт и вашего прогресса на каждой из них.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item glass-card reveal delay-1">
+          <!-- ЗАМЕНИТЕ НА <img src="screen-veto.png" alt="Бан карт"> -->
+          <div class="image-placeholder gallery-placeholder">
+            <div class="placeholder-icon">⚔️</div>
+            <p>Экран бана карт (Вето)</p>
+            <span>800 × 500 px</span>
+          </div>
+          <div class="gallery-caption">
+            <h4>Лобби и вето карт</h4>
+            <p>Интерактивное вычёркивание карт капитанами в реальном времени.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item glass-card reveal delay-2">
+          <!-- ЗАМЕНИТЕ НА <img src="screen-stats.png" alt="Статистика"> -->
+          <div class="image-placeholder gallery-placeholder">
+            <div class="placeholder-icon">📊</div>
+            <p>Экран профиля и статистики</p>
+            <span>800 × 500 px</span>
+          </div>
+          <div class="gallery-caption">
+            <h4>Детальная статистика</h4>
+            <p>История матчей, K/D, винрейт и доступ к скачиванию демо-записей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="Logo NonFon.png" alt="PULSE" class="logo-img">
+          <span>PULSE</span>
+        </a>
+        <p>Независимая платформа матчмейкинга для CS:GO Legacy (128 Tick).</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/" target="_blank">Telegram</a>
+        <a href="https://vk.com/" target="_blank">ВКонтакте</a>
+        <a href="https://tiktok.com/" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 PULSE Project. CS:GO является зарегистрированным товарным знаком Valve Corporation. Проект не аффилирован с Valve.</p>
+    </div>
+  </footer>
+
+  <!-- Модальное окно скачивания -->
+  <div class="modal-overlay" id="downloadModal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span>Уже в разработке</span>
+      </div>
+      <h3>Скачивание <span class="text-gradient">PULSE</span></h3>
+      <p>
+        Платформа находится в активной разработке. Совсем скоро откроется доступ для первых игроков!
+      </p>
+      <p>
+        Подпишитесь на наш Telegram-канал или группу ВКонтакте, чтобы следить за обновлениями и первыми получить ссылку на скачивание.
+      </p>
+      <div class="modal-actions">
+        <a href="https://t.me/" target="_blank" class="btn btn-primary">Перейти в Telegram</a>
+        <a href="https://vk.com/" target="_blank" class="btn btn-secondary">Группа ВКонтакте</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Логика экрана приветствия (Splash Screen)
+    window.addEventListener('DOMContentLoaded', () => {
+      const splash = document.getElementById('splashScreen');
+      document.body.style.overflow = 'hidden';
+
+      setTimeout(() => {
+        splash.classList.add('fade-out');
+        document.body.style.overflow = '';
+        
+        // Запускаем анимацию появления главного экрана сразу после исчезновения заставки
+        document.querySelectorAll('.hero-animate').forEach(el => {
+          el.classList.add('visible');
+        });
+      }, 2100); // Заставка держится 2.1 секунды
+    });
+
+    // 2. Плавное появление элементов при скролле
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 3. Интерактивный 3D-наклон главного мокапа при движении мыши
+    const tiltCard = document.getElementById('tiltCard');
+    if (tiltCard) {
+      tiltCard.addEventListener('mousemove', (e) => {
+        const rect = tiltCard.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -6;
+        const rotateY = ((x - centerX) / centerX) * 6;
+
+        tiltCard.style.animation = 'none';
+        tiltCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
+
+      tiltCard.addEventListener('mouseleave', () => {
+        tiltCard.style.transform = '';
+        tiltCard.style.animation = 'floatAnim 6s ease-in-out infinite';
+      });
+    }
+
+    // 4. Логика модального окна скачивания
+    const downloadBtn = document.getElementById('downloadBtn');
+    const downloadModal = document.getElementById('downloadModal');
+    const closeModal = document.getElementById('closeModal');
+
+    downloadBtn.addEventListener('click', () => {
+      downloadModal.classList.add('active');
+    });
+
+    closeModal.addEventListener('click', () => {
+      downloadModal.classList.remove('active');
+    });
+
+    downloadModal.addEventListener('click', (e) => {
+      if (e.target === downloadModal) {
+        downloadModal.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
